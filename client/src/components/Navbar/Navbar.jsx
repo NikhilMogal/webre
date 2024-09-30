@@ -1,11 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { MdOutlineKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
-import './Navbar.css'; 
-
+import './Navbar.css';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header header-light">
       <div className="container">
@@ -18,9 +23,14 @@ const Navbar = () => {
                 alt="Lalit Roongta Group"
               />
             </Link>
-            <div className="nav-toggle"></div>
+            <div className="nav-toggle" onClick={toggleMenu}>
+              {menuOpen ? <MdClose /> : <MdMenu />}
+            </div>
           </div>
-          <div className="nav-menus-wrapper" style={{ transitionProperty: 'none' }}>
+          <div
+            className={`nav-menus-wrapper ${menuOpen ? "active" : ""}`}
+            style={{ transitionProperty: 'none' }}
+          >
             <ul className="nav-menu">
               <li className="active">
                 <Link to="/">Home</Link>
@@ -31,7 +41,6 @@ const Navbar = () => {
               <li>
                 <Link to="#">Residential<span className="submenu-indicator"></span> </Link>
                 <MdOutlineKeyboardArrowDown />
-               
                 <ul className="nav-dropdown nav-submenu">
                   <li>
                     <Link to="">All Projects</Link>
@@ -79,7 +88,7 @@ const Navbar = () => {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
-            <ul className="nav-menu nav-menu-social ">
+            <ul className="nav-menu nav-menu-social">
               <li>
                 <Link to="/Signin">
                   <i className="Sign"><IoMdContact /></i>Sign In
