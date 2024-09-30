@@ -1,0 +1,41 @@
+
+
+
+.about-section {
+    padding: 50px; 
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.content-column {
+    flex: 1; 
+    padding: 20px;
+}
+
+.sec-title h2 {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+
+.text {
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+
+.image-column {
+    flex: 1; 
+}
+
+.image-box {
+    max-width: 100%; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+}

@@ -1,0 +1,136 @@
+
+
+.property-listing {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  .property-listing:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .listing-img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .property-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .property-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .listing-detail-wrapper {
+    padding: 16px;
+  }
+  
+  .listing-short-detail-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .listing-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .listing-name a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .listing-name a:hover {
+    color: #007bff;
+  }
+  
+  .price-features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .list-fx-features {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .listing-card-info-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .listing-card-info-icon img {
+    margin-right: 8px;
+  }
+  
+  .listing-detail-footer {
+    padding: 10px 16px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .foot-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .foot-location img {
+    margin-right: 8px;
+  }
+  
+  .prt-view {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .prt-view:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .listing-short-detail {
+      font-size: 1rem;
+    }
+  
+    .listing-card-info-icon {
+      font-size: 0.85rem;
+    }
+  
+    .prt-view {
+      font-size: 0.85rem;
+    }
+  }
+  

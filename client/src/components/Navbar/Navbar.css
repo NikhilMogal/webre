@@ -1,0 +1,113 @@
+.header-light {
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .navigation-landscape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-brand img {
+    height: 55px;
+  }
+  
+  .nav-toggle {
+    display: none; 
+  }
+  
+  .nav-menus-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+  }
+  
+  .nav-menu li {
+    position: relative;
+    margin-right: 40px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    
+    font-size: 18px;
+  }
+  
+  .nav-menu li a:hover {
+    color: #00ff40;
+  }
+  
+  .nav-menu .submenu-indicator {
+    margin-left: 5px;
+  }
+  
+  .nav-dropdown {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .nav-submenu li {
+    padding: 10px 20px;
+  }
+  
+  .nav-submenu li a {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .nav-submenu li a:hover {
+    color: #00ff5e;
+  }
+  
+  .nav-menu li:hover .nav-dropdown {
+
+    display: block;
+  }
+  
+  .nav-menu-social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu-social li a {
+    color: #28a745;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .nav-menu-social li a i {
+    margin-right: 5px;
+  }
+  
+  .nav-menu-social li a:hover {
+    color: #00ff51;
+  }
+  

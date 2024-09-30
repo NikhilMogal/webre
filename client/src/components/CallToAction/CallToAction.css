@@ -1,0 +1,50 @@
+.theme-bg {
+    background-color: #1100ff;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+
+.call-to-act {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+    
+    border-radius: 30%;
+}
+
+.call-to-act-head h3 {
+    display: flex;
+   
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.call-to-act-head span {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.btn-call-to-act {
+
+display: flex;
+
+padding: 12px 25px;
+color: white; 
+border: none;
+
+border-radius: 5px;
+font-size: 1.1em;
+cursor: pointer;
+margin-left: auto;
+transition: background-color 0.3s ease;
+margin-left: auto;
+}
+
+.btn-call-to-act:hover {
+    background-color: #e65c00;
+}

@@ -1,0 +1,61 @@
+.property-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+  }
+  
+  .gallery-item {
+    margin-right: 10px;
+  }
+  
+  .gallery-img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .property-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .property-details {
+    flex: 1;
+  }
+  
+  .qr-code-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .qr-img {
+    width: 120px;
+  }
+  
+  .rera-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rera-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  .amenities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .amenities li {
+    margin: 5px 0;
+  }
+  
