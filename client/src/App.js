@@ -21,7 +21,7 @@ function App() {
      
 
       <Routes>
-      < Route path="" element={<Home/>}/>
+      < Route path="/" element={<Home/>}/>
       <Route path="/about" element={<Layout><About /></Layout>} /> 
         <Route path="/signin" element={<SignIn isVisible={isFormVisible} onCancel={handleCancel}/>} />
 
