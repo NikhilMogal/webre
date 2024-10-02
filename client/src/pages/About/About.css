@@ -41,8 +41,8 @@
 .image img {
     width: 100%;
     height: auto;
-}
 
+}
 @media (min-width: 768px) {
     .about-content {
         flex-direction: row; 
