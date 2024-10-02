@@ -5,7 +5,7 @@
 
 .about-content {
     display: flex;
-    flex-direction: column; /* Stack columns by default */
+    flex-direction: column; 
     align-items: center;
     justify-content: space-between;
 }
@@ -14,7 +14,7 @@
 .image-column {
     flex: 1;
     padding: 20px;
-    width: 100%; /* Set to full width by default */
+    width: 100%;
 }
 
 .sec-title h2 {
@@ -43,10 +43,9 @@
     height: auto;
 }
 
-/* Media queries for larger screens */
 @media (min-width: 768px) {
     .about-content {
-        flex-direction: row; /* Side by side on larger screens */
+        flex-direction: row; 
     }
 
     .sec-title h2 {

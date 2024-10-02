@@ -110,7 +110,7 @@
   color: #00ff51;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .nav-menus-wrapper {
     flex-direction: column;

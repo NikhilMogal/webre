@@ -1,100 +1,121 @@
-/* Container for the login form */
 .login-form-container {
-    position: relative;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    font-family: Arial, sans-serif;
-  }
-  
+  position: relative;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  width: 90%; 
+}
 
-  .cancel-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
+.cancel-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  color: #ff0000;
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .login-form-container {
+      padding: 15px;
+      margin: 75px auto; 
   }
-  
-  .cancel-btn:hover {
-    color: #ff0000;
-  }
-  
 
   .login-form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+      font-size: 1.5rem; 
   }
-  
-
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-  
 
   .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
+      font-size: 15px; 
+      padding: 8px;
   }
-  
 
-  .form-group input:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
- 
   button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+      font-size: 15px;
+      padding: 9px;
   }
-  
- 
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  
-  @media (max-width: 600px) {
-    .login-form-container {
-      padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .login-form-container {
+      padding: 10px;
       margin: 50px auto;
-    }
-  
-    .form-group input {
+      max-width: 90%; 
+  }
+
+  .login-form-container h2 {
+      font-size: 1.4rem; 
+  }
+
+  .form-group input {
       font-size: 14px;
-    }
-  
-    button[type="submit"] {
+      padding: 8px; 
+  }
+
+  button[type="submit"] {
       font-size: 14px;
       padding: 8px;
-    }
-  
-    .cancel-btn {
-      font-size: 20px;
-    }
   }
-  
+
+  .cancel-btn {
+      font-size: 20px;
+  }
+}
